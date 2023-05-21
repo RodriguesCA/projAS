@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registo.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="registo">
+      <div class="dados">Dados:</div>
+      <input class="text-input10" type="text" />
+
+      <div class="bottom5">
+        <div class="social-media-stack5">
+          <img class="twitter-icon5" alt="" src="{{ url_for('static', filename='images/24--twitter1.svg') }}" />
+
+          <img class="twitter-icon5" alt="" src="{{ url_for('static', filename='images/24--instagram.svg') }}" />
+
+          <img class="twitter-icon5" alt="" src="{{ url_for('static', filename='images/24--facebook.svg') }}" />
+        </div>
+        <div class="copyright5">© 2023 Eventos+</div>
+      </div>
+      <img class="footer-divider5" alt="" src="{{ url_for('static', filename='images/footer--divider.svg') }}" />
+
+      <button class="button-row" id="buttonRow">
+        <div class="button5">
+          <div class="registar">Registar</div>
+        </div>
+      </button>
+      <input class="text-input10" type="text" />
+
+      <input class="text-input12" type="text" />
+
+      <input class="text-input13" type="text" />
+
+      <input class="text-input13" type="text" />
+
+      <input class="text-input15" type="text" />
+
+      <img class="image-1-icon" alt="" src="{{ url_for('static', filename='images/image-1@2x.png') }}" />
+
+      <div class="desktop-full2">
+        <div class="wordmark4" id="wordmarkContainer">
+          <b class="eventos4">
+            <span>Eventos</span>
+            <span class="span6">+</span>
+          </b>
+        </div>
+        <div class="nav-navigation-menu4">
+          <div class="nav-list-item11">
+            <div class="copyright5">Eventos</div>
+          </div>
+          <div class="nav-list-item12">
+            <div class="copyright5">Login</div>
+          </div>
+          <button class="button6">
+            <div class="label20">Registar</div>
+          </button>
+        </div>
+      </div>
+      <div class="registo-child"></div>
+      <div class="base-dropdown-expanded-list">
+        <div class="pilll-chit">
+          <div class="base-pill-chit">
+            <div class="escolha-um-tipo">Escolha o seu tipo de utilizador</div>
+            <img
+              class="chevron-down-icon"
+              alt=""
+              src="{{ url_for('static', filename='images/18--chevron-down.svg') }}"
+            />
+          </div>
+        </div>
+      </div>
+      <b class="junte-se-a-milhares">Junte-se a milhares de utilizadores</b>
+    </div>
+
+    <script>
+      var buttonRow = document.getElementById("buttonRow");
+      if (buttonRow) {
+        buttonRow.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+      
+      var wordmarkContainer = document.getElementById("wordmarkContainer");
+      if (wordmarkContainer) {
+        wordmarkContainer.addEventListener("click", function (e) {
+          window.location.href = "./sem-login.html";
+        });
+      }
+      </script>
+  </body>
+</html>

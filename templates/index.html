@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="pesquisa">
+      <div class="desktop-footer">
+        <img class="footer-divider" alt="" src="{{ url_for('static', filename='images/footer--divider.svg') }}" />
+
+        <div class="bottom">
+          <div class="social-media-stack">
+            <img class="twitter-icon" alt="" src="{{ url_for('static', filename='images/24--twitter.svg') }}" />
+
+            <img class="twitter-icon" alt="" src="{{ url_for('static', filename='images/24--instagram.svg') }}" />
+
+            <img class="twitter-icon" alt="" src="{{ url_for('static', filename='images/24--facebook.svg') }}" />
+          </div>
+          <div class="copyright">© 2023 Eventos+</div>
+        </div>
+      </div>
+      <div class="card-row">
+        <div class="title-row">
+          <b class="copyright">Resultados Para a Sua Pesquisa:</b>
+        </div>
+        <div class="cards">
+          <div class="card-row1">
+            <div class="card-full-card">
+              <img class="image-icon" alt="" src="{{ url_for('static', filename='images/image@2x.png') }}" />
+
+              <div class="data">
+                <div class="title-row1">
+                  <div class="name">Festivais de música</div>
+                </div>
+                <div class="description">
+                  Festivais de música: Eventos onde vários artistas e bandas se
+                  apresentam ao vivo para um público. Os festivais podem durar
+                  um ou vários dias e geralmente apresentam uma variedade de
+                  gêneros musicais. Exemplos incluem o Rock in Rio, Lollapalooza
+                  e o Festival de Glastonbury.
+                </div>
+              </div>
+            </div>
+            <div class="card-full-card">
+              <img class="image-icon" alt="" src="{{ url_for('static', filename='images/image1@2x.png') }}" />
+
+              <div class="data">
+                <div class="title-row1">
+                  <div class="name">Seminários de especialistas</div>
+                </div>
+                <div class="description">
+                  Eventos educacionais onde especialistas em determinado campo
+                  compartilham seu conhecimento e experiência com o público.
+                  Estes eventos geralmente têm duração limitada, como uma tarde
+                  ou um dia inteiro, e podem abordar temas específicos, como
+                  finanças pessoais, saúde mental ou sustentabilidade.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-full">
+        <div class="wordmark">
+          <b class="copyright">
+            <span>Eventos</span>
+            <span class="span">+</span>
+          </b>
+        </div>
+        <div class="nav-navigation-menu">
+          <div class="nav-list-item">
+            <div class="copyright">Eventos</div>
+          </div>
+          <div class="nav-list-item">
+            <div class="copyright">Meus Eventos</div>
+          </div>
+          <img class="header-avatar" alt="" src="{{ url_for('static', filename='images/header--avatar.svg') }}" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

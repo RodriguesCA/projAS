@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/evento.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="evento1">
+      <div class="desktop-footer2">
+        <img
+          class="footer-divider7"
+          alt=""
+          src="{{ url_for('static', filename='images/footer--divider.svg') }}"
+        />
+
+        <div class="bottom7">
+          <div class="social-media-stack7">
+            <img class="twitter-icon7" alt="" src="{{ url_for('static', filename='images/24--twitter1.svg') }}" />
+
+            <img
+              class="twitter-icon7"
+              alt=""
+              src="{{ url_for('static', filename='images/24--instagram.svg') }}"
+            />
+
+            <img class="twitter-icon7" alt="" src="{{ url_for('static', filename='images/24--facebook.svg') }}" />
+          </div>
+          <div class="callouts-are-used">© 2023 Eventos+</div>
+        </div>
+      </div>
+      <div class="informao-do-evento-container">
+        <b class="div15bot">
+          <span class="informao-do-evento">Informação do Evento:</span>
+          <span>{{ event.name }}</span>
+        </b>
+        <div class="div15bot">
+          {{ event.description }}
+        </div>
+        <div class="div15bot organizador-fundao-de-container">
+          <span class="tipo-de-evento">Organizador: </span>
+          <span class="cultural">{{ event.organizer.username }}</span>
+        </div>
+        <div>
+          <span>Tipo de Evento: </span>
+          <span class="cultural">{{ event.type }}</span>
+        </div>
+      </div>
+      <div class="preo-grtis">
+        <span class="tipo-de-evento">Preço: </span>
+        <span class="cultural">{% if event.price == 0.00 %}
+          GRATIS
+      {% elif event.price|int == event.price %}
+          {{ event.price|int }}€
+      {% else %}
+          {{ event.price }}€
+      {% endif %}</span>
+      </div>
+      <div class="horrio-tera-a-container">
+        <span class="tipo-de-evento">Horário: </span>
+        <span class="cultural">{{ event.start_time.strftime('%H:%M') }}</span>
+      </div>
+      <div class="palestrantes-jos-lus-container">
+        <span class="tipo-de-evento">Palestrantes: </span>
+        <span class="cultural"
+          ><ul>
+            {% for speaker in event.speakers %}
+                <li>{{ speaker.username }}</li>
+            {% endfor %}
+            </ul></span
+        >
+      </div>
+      <div class="local-galeria-de-container">
+        <span class="tipo-de-evento">Local: </span>
+        <span class="cultural">{{ event.address }}</span>
+      </div>
+      <div class="como-chegar">Como Chegar?</div>
+      <div class="clique-no-mapa-container">
+        <span class="clique-no-mapa-container1">
+          <p class="clique-no-mapa">Clique no mapa ao lado</p>
+          <p class="clique-no-mapa">para obter direções!</p>
+        </span>
+        <a href="https://maps.google.com"><img
+          class="screenshot-2023-05-07-at-18-05"
+          alt=""
+          src="{{ url_for('static', filename='images/screenshot-20230507-at-180518-google-maps-1@2x.png') }}"
+        /></a>
+      </div>
+
+      <div class="data-de-15-container">
+        <span class="tipo-de-evento">Data: </span>
+        <span class="cultural">De {{ event.start_date.strftime('%d-%m-%Y') }} a {{ event.end_date.strftime('%d-%m-%Y') }}        </span>
+    </div>
+      <div class="devolues-ou-cancelamentos-container">
+        <span
+          >Devoluções ou cancelamentos no mínimo 48h antes do evento. Em caso de
+          dúvida ou erro
+        </span>
+        <span class="contacte-o-nosso">contacte o nosso suporte</span>
+        <span>.</span>
+      </div>
+      <div class="informao-sobre-a">Informação sobre a compra de Bilhetes</div>
+      <div class="qnt-bilhetes">Qnt. Bilhetes</div>
+      <div class="button-row2">
+        <button class="button10" onclick="alert('Bilhetes comprados!')">
+          <div class="label38">
+            Comprar Bilhetes
+          </div>
+        </button>
+      </div>
+      <img class="increment-icon" alt="" src="{{ url_for('static', filename='images/increment.svg') }}" />
+
+      <img class="increment-icon1" alt="" src="{{ url_for('static', filename='images/increment1.svg') }}" />
+
+      <div class="div8">1</div>
+      <div class="desktop-full3">
+        <div class="wordmark6">
+          <a href="/"><b class="eventos6">
+            <span>Eventos</span>
+            <span class="span8">+</span>
+          </b></a>
+        </div>
+        {% if current_user.is_authenticated and current_user.role == 'Palestrante' %}
+        <div class="success">
+          <div class="base-callout">
+            <div class="callouts-are-used">
+              Foi convidado para palestrar neste evento!
+            </div>
+            <img class="x-close-no" alt="" src="{{ url_for('static', filename='images/32--x-close-no.svg') }}') }}" />
+          </div>
+        </div>
+        {% endif %}
+
+        {% if current_user.is_authenticated %}
+            {% if current_user.role == 'Gestor' %}
+              <div class="nav-navigation-menu6">
+                <a href="/"><div class="nav-list-item17">
+                  <div class="callouts-are-used">Eventos</div>
+                </div></a>
+                <div class="nav-list-item17">
+                  <div class="callouts-are-used">Meus Eventos</div>
+                </div>
+                <img class="header-avatar4" alt="" src="{{ url_for('static', filename='images/' + event.image_file) }}" />
+              </div>
+            {% elif current_user.role == 'Palestrante' %}
+                <p>This is some text for Role2.</p>
+            {% else %}
+                <p>You are logged in, but your role is not recognized.</p>
+            {% endif %}
+        {% else %}
+            <div class="nav-navigation-menu7">
+              <div class="nav-list-item19">
+                <a href="/"><div class="name-of-section-container">Eventos</div>
+              </div></a>
+              <button class="button14">
+                <a href="/register">
+                  <div class="label46">Registar</div>
+                </a>
+              </button>
+              <button class="button14">
+                <a href="/login">
+                  <div class="label46">Login</div>
+                </a>
+              </button>
+            </div>
+        {% endif %}
+      </div>
+      <img class="image-icon3" alt="" src="{{ url_for('static', filename='images/image3@2x.png') }}" />
+
+      {% if current_user.is_authenticated and current_user.role == 'Palestrante' %}
+        <button class="button12">
+          <div class="aceitar-convite-para">Aceitar Convite para Evento</div>
+        </button>
+        {% endif %}
+      
+    </div>
+  </body>
+</html>

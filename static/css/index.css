@@ -1,0 +1,210 @@
+.footer-divider,
+.twitter-icon {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.footer-divider {
+  align-self: stretch;
+  max-width: 100%;
+  height: 1px;
+}
+.twitter-icon {
+  width: 24px;
+  height: 24px;
+}
+.social-media-stack {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.copyright {
+  position: relative;
+}
+.bottom {
+  align-self: stretch;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-101xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.desktop-footer,
+.title-row {
+  display: flex;
+  align-items: flex-start;
+}
+.desktop-footer {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 740px);
+  background-color: var(--true-white);
+  width: 1440px;
+  flex-direction: column;
+  padding: var(--padding-base) 0;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+  text-align: right;
+  font-size: var(--header-h4-size);
+  color: var(--grey-400);
+}
+.title-row {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 397px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.name {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.title-row1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.description {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-default-size);
+  color: var(--grey-400);
+}
+.card-full-card,
+.data {
+  align-self: stretch;
+  background-color: var(--true-white);
+  flex-direction: column;
+  align-items: flex-start;
+}
+.data {
+  display: flex;
+  padding: var(--padding-base) var(--padding-5xl);
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.card-full-card {
+  flex: 1;
+  border-radius: var(--br-xs);
+  box-shadow: var(--elevation-light);
+  overflow: hidden;
+}
+.card-full-card,
+.card-row,
+.card-row1,
+.cards {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-row1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-21xl);
+}
+.card-row,
+.cards {
+  flex-direction: column;
+}
+.cards {
+  align-self: stretch;
+  align-items: flex-start;
+  font-size: var(--header-h4-size);
+  color: var(--purple-blue);
+}
+.card-row {
+  position: absolute;
+  top: 204px;
+  left: -24px;
+  width: 1440px;
+  overflow-x: auto;
+  padding: var(--padding-21xl) var(--padding-45xl);
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--gap-5xl);
+}
+.span {
+  background: linear-gradient(180deg, #605dec, #2a26d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-list-item,
+.wordmark {
+  overflow: hidden;
+  display: flex;
+}
+.wordmark {
+  width: 131px;
+  height: 54px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+}
+.nav-list-item {
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.nav-navigation-menu {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-base);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: center;
+  font-size: var(--body-default-size);
+  color: var(--grey-400);
+}
+.desktop-full,
+.pesquisa {
+  background-color: var(--true-white);
+}
+.desktop-full {
+  position: absolute;
+  max-width: calc(100% + 8px);
+  top: 0;
+  right: 0;
+  left: -8px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.pesquisa {
+  position: relative;
+  max-width: 100%;
+  height: 1373px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--header-h3-size);
+  color: var(--grey-600);
+  font-family: var(--body-default);
+}

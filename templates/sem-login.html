@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sem-login.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sem-login">
+      <div class="body">
+        <div class="card-row2">
+          <div class="title-row3">
+            <b class="name-of-section-container">
+              <span>Encontra os melhores </span>
+              <span class="eventos-culturais">Eventos Culturais </span>
+              <span>abaixo!</span>
+              <span class="eventos-culturais"> </span>
+            </b>
+            <div class="see-all">
+              <div class="name-of-section-container">Todos</div>
+              <img
+                class="arrowright-icon"
+                alt=""
+                src="{{ url_for('static', filename='images/32--arrowright.svg') }}"
+              />
+            </div>
+          </div>
+          <div class="cards1">
+            <div class="card-row3">
+              <div class="card-full-card2" id="cardFullCard">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image4@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Workshop de Pintura Aquarela para Iniciantes
+                    </div>
+                    <div class="price">35€</div>
+                  </div>
+                  <div class="description2">Porto</div>
+                </div>
+              </div>
+              <div class="card-full-card2" id="cardFullCard1">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image5@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Exposição de Fotografia "Olhares do Mundo”
+                    </div>
+                    <div class="price">GRÁTIS</div>
+                  </div>
+                  <div class="description2">Porto</div>
+                </div>
+              </div>
+              <div class="card-full-card2" id="cardFullCard2">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image6@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Exposição de Fotografia "American Corner”
+                    </div>
+                    <div class="price">GRÁTIS</div>
+                  </div>
+                  <div class="description2">Aveiro</div>
+                </div>
+              </div>
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image7@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      <span>Tsavo East National Park, </span>
+                      <span class="eventos-culturais">Kenya</span>
+                    </div>
+                    <div class="price">$1,000</div>
+                  </div>
+                  <div class="description2">
+                    Situated in a semi-arid area previously known as the Taru
+                    Desert it opened in April 1948. Named after the Tsavo River,
+                    Tsavo East National Park is one of the oldest and largest
+                    parks in Kenya.
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image8@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">Destination name</div>
+                    <div class="price">$1,000</div>
+                  </div>
+                  <div class="description2">One line description</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-row4" id="cardRow1">
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image9@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      <span>The Bund,</span>
+                      <span class="eventos-culturais"> Shanghai</span>
+                    </div>
+                    <div class="price">$598</div>
+                  </div>
+                  <div class="description2">
+                    China’s most international city
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image10@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      <span>Sydney Opera House,</span>
+                      <span class="eventos-culturais"> Sydney</span>
+                    </div>
+                    <div class="price">$981</div>
+                  </div>
+                  <div class="description2">
+                    Take a stroll along the famous harbor
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image11@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      <span>Kōdaiji Temple,</span>
+                      <span class="eventos-culturais"> Kyoto</span>
+                    </div>
+                    <div class="price">$633</div>
+                  </div>
+                  <div class="description2">
+                    Step back in time in the Gion district
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card10">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image2@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Workshop de Cozinha Portuguesa e os seus Segredos
+                    </div>
+                    <div class="price">65€</div>
+                  </div>
+                  <div class="description2">Lisboa</div>
+                </div>
+              </div>
+              <div class="card-full-card5">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image11@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">Destination name</div>
+                    <div class="price">$1,000</div>
+                  </div>
+                  <div class="description2">One line description</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-row5">
+          <div class="title-row3">
+            <b class="name-of-section-container">
+              <span>Explora os melhores</span>
+              <span class="eventos-educacionais"> Eventos Educacionais</span>
+            </b>
+          </div>
+          <div class="cards2">
+            <div class="card-row3">
+              <div class="card-full-card2" id="cardFullCard10">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image12@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Palestra "A História da Literatura Portuguesa"
+                    </div>
+                  </div>
+                  <div class="description2">
+                    Junte-se à professora Maria Almeida, especialista em
+                    literatura portuguesa, para explorar os períodos e autores
+                    mais significativos da história da literatura portuguesa.
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card2" id="cardFullCard11">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image13@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Seminário de Empreendedorismo e Inovação
+                    </div>
+                  </div>
+                  <div class="description2">
+                    Este seminário de um dia apresentará palestrantes e painéis
+                    de discussão sobre empreendedorismo, inovação e as melhores
+                    práticas para iniciar e expandir um negócio.
+                  </div>
+                </div>
+              </div>
+              <div class="card-full-card2" id="cardFullCard12">
+                <img class="image-icon4" alt="" src="{{ url_for('static', filename='images/image14@2x.png') }}" />
+
+                <div class="data4">
+                  <div class="title-row4">
+                    <div class="name2">
+                      Curso de Culinária Saudável e Sustentável
+                    </div>
+                  </div>
+                  <div class="description2">
+                    Aprenda a preparar pratos deliciosos e saudáveis usando
+                    ingredientes sustentáveis e ecológicos neste curso de
+                    culinária de seis semanas.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button13">
+          <div class="label42">Explorar mais Eventos</div>
+        </button>
+        <div class="testimonial-row">
+          <div class="title-row18">
+            <b class="name-of-section-container">
+              <span>O que os Utilizadores do </span>
+              <span class="eventos-culturais">Eventos+</span>
+              <span> estão a dizer</span>
+            </b>
+          </div>
+          <div class="testimonial-social-proof-parent">
+            <div class="testimonial-social-proof">
+              <img class="avatar-icon" alt="" src="{{ url_for('static', filename='images/avatar@2x.png') }}" />
+
+              <div class="text">
+                <div class="user-data">
+                  <div class="first-last">Maria Sequeira</div>
+                  <div class="tokyo-japan-container">
+                    <span>Aveiro, Aveiro </span>
+                    <span class="span10">|</span>
+                    <span> Abril 2023</span>
+                  </div>
+                  <button class="rating-star-row">
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled.svg') }}"
+                    />
+                  </button>
+                </div>
+                <div class="this-is-a-container">
+                  <span
+                    >Recentemente, participei do Workshop de Pintura Aquarela
+                    para Iniciantes organizado pela plataforma Eventos+. A
+                    inscrição foi rápida e fácil, e o evento foi fantástico!
+                  </span>
+                  <span class="eventos-culturais">ler mais...</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-social-proof">
+              <img class="avatar-icon" alt="" src="{{ url_for('static', filename='images/avatar1@2x.png') }}" />
+
+              <div class="text">
+                <div class="user-data">
+                  <div class="first-last">Cristina Ferreira</div>
+                  <div class="tokyo-japan-container">
+                    <span>Tavira, Algarve </span>
+                    <span class="span10">|</span>
+                    <span> Março 2023</span>
+                  </div>
+                  <div class="rating-star-row1">
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled1.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled1.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled1.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled1.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-unfilled.svg') }}"
+                    />
+                  </div>
+                </div>
+                <div class="this-is-a-container">
+                  <span
+                    >Eu inscrevi-me no Seminário de Empreendedorismo e Inovação
+                    através da Eventos+ e fiquei impressionada com a qualidade
+                    dos palestrantes e das discussões. ler mais</span
+                  >
+                  <span class="eventos-culturais">...</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-social-proof">
+              <img class="avatar-icon" alt="" src="{{ url_for('static', filename='images/avatar2@2x.png') }}" />
+
+              <div class="text">
+                <div class="user-data">
+                  <div class="first-last">António Márcio</div>
+                  <div class="tokyo-japan-container">
+                    <span>Porto, Porto </span>
+                    <span class="span10">|</span>
+                    <span> Maio 2023</span>
+                  </div>
+                  <button class="rating-star-row">
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled2.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled2.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled2.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled2.svg') }}"
+                    />
+
+                    <img
+                      class="star-filled-icon"
+                      alt=""
+                      src="{{ url_for('static', filename='images/24--star-filled2.svg') }}"
+                    />
+                  </button>
+                </div>
+                <div class="this-is-a-container">
+                  <span
+                    >A Eventos+ ajudou-me a encontrar e participar num curso de
+                    culinária saudável e sustentável. A plataforma é intuitiva e
+                    fácil de usar, e o curso foi uma ótima experiência.
+                  </span>
+                  <span class="eventos-culturais">ler mais...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-footer3">
+          <img
+            class="footer-divider8"
+            alt=""
+            src="{{ url_for('static', filename='images/footer--divider.svg') }}"
+          />
+
+          <div class="bottom8">
+            <div class="social-media-stack8">
+              <img
+                class="twitter-icon8"
+                alt=""
+                src="{{ url_for('static', filename='images/24--twitter1.svg') }}"
+              />
+
+              <img
+                class="twitter-icon8"
+                alt=""
+                src="{{ url_for('static', filename='images/24--instagram.svg') }}"
+              />
+
+              <img
+                class="twitter-icon8"
+                alt=""
+                src="{{ url_for('static', filename='images/24--facebook.svg') }}"
+              />
+            </div>
+            <div class="name-of-section-container">© 2023 Eventos+</div>
+          </div>
+        </div>
+      </div>
+      <form class="hero">
+        <div class="os-melhores-eventos-container">
+          <p class="os-melhores-eventos">Os Melhores Eventos</p>
+          <p class="os-melhores-eventos">à distância de um Clique</p>
+        </div>
+        <div class="flight-search" id="flightSearchContainer">
+          <input class="text-input26" type="text" />
+
+          <div class="divider"></div>
+          <input class="text-input26" type="text" />
+
+          <div class="divider"></div>
+          <div class="text-input28">
+            <div class="base-text-input8">
+              <img
+                class="arrowright-icon"
+                alt=""
+                src="{{ url_for('static', filename='images/32--calendar-with-dates.svg') }}"
+              />
+
+              <div class="label43">Data</div>
+              <img
+                class="eye-show-visible"
+                alt=""
+                src="{{ url_for('static', filename='images/32--eye-show-visible.svg') }}"
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <button class="button14">
+            <div class="label42">Pesquisar!</div>
+          </button>
+        </div>
+      </form>
+      <div class="desktop-full4">
+        <div class="wordmark7">
+          <b class="eventos8">
+            <span>Eventos</span>
+            <span class="span14">+</span>
+          </b>
+        </div>
+        <div class="nav-navigation-menu7">
+          <div class="nav-list-item19">
+            <a href="/"><div class="name-of-section-container">Eventos</div>
+          </div></a>
+          <button class="button14">
+            <a href="/register">
+              <div class="label46">Registar</div>
+            </a>
+          </button>
+          <button class="button14">
+            <a href="/login">
+              <div class="label46">Login</div>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
